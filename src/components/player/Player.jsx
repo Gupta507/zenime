@@ -223,7 +223,7 @@ export default function Player({
         m3u8proxy[Math.floor(Math.random() * m3u8proxy?.length)] +
         streamUrl +
         "&headers=" +
-        encodeURIComponent(JSON.stringify(headers)),
+        (JSON.stringify(headers)),
       container: artRef.current,
       type: "m3u8",
       autoplay: autoPlay,
